@@ -4,11 +4,7 @@ const Main = () => {
 
     return (
         <>
-            <div className="page">
-                <div className="pagecontainer">
 
-                </div>
-            </div>
 
         </>
     )
