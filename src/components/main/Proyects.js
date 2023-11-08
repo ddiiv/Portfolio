@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainBeginning = () => {
+const Proyects = () => {
     
 
     return (
@@ -9,4 +9,4 @@ const MainBeginning = () => {
         </>
     )
 }
-export default MainBeginning
+export default Proyects

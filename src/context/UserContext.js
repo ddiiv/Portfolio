@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useState, useEffect } from "react";
+import React, { useContext, createContext, useState } from "react";
 import { getInfo } from "../api/apiFunctions";
 
 const UserContext = createContext();
@@ -15,27 +15,29 @@ export const UserProvider = ({ children }) => {
     const [User, setUser] = useState(null);
     const [Logged, setLogged] = useState(false);
 
-    async function initializeInfo (ok){
-        if(User === null){
-        await getInfo(ok).then((data) => {
-            if (data) {
-                setUser({ ...data })
-                setLogged(true)
-                return User
-            }
-            else{
-                setUser(null)
-                setLogged(false)
-                return console.log("no llego la info")
-            }
-        })}
-        else{
+    async function initializeInfo() {
+
+        if (User === null) {
+            await getInfo().then((data) => {
+                if (data) {
+                    setUser({ ...data })
+                    setLogged(true)
+                    return User
+                }
+                else {
+                    setUser(null)
+                    setLogged(false)
+                    return console.log("no llego la info")
+                }
+            })
+        }
+        else {
             setUser(null)
         }
     }
 
 
-    return <UserFunctions.Provider value={{Logged,  initializeInfo}}>
+    return <UserFunctions.Provider value={{ Logged, initializeInfo }}>
         <UserContext.Provider value={User}>
             {children}
         </UserContext.Provider>
