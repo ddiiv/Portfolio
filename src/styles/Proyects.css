@@ -1,0 +1,47 @@
+.ticket-row.proyects__container{
+    display: contents;
+
+}
+
+.img-proyect {
+    width: 40rem;
+    height: 20rem;
+}
+
+.separator-ui {
+    background: rgba(0, 0, 0, 0);
+    height: 0.5px;
+    margin-top: 20px;
+    border: 0.5px solid rgb(204, 204, 204);
+    width: 100%;
+
+}
+
+.richtext.title-proyect {
+    font-size: 30px;
+    line-height: 2.5rem;
+    color: rgb(56, 56, 56);
+    font-family: "PoppinsExtraBold";
+    transition: ease-in-out 333ms;
+}
+
+.ticket-row__column-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    text-align: left;
+}
+
+.ticket-row__left-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+.columns-proyects{
+    display: flex;
+    justify-content: space-between;
+
+}
