@@ -11,7 +11,7 @@ const Main = () => {
     return (
         <>
 
-            <section className="ticket-row">
+            <section className="ticket-row noflex" >
                 <div className="ticket-row--conteiner">
                     <div className="columns-presentation">
                         <div className="ticket-right-column">

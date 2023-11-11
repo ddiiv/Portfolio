@@ -1,35 +1,51 @@
 import React from "react";
 import "../../styles/Proyects.css"
+import { useProyectContext } from "../../context/ProyectContext";
 
 const Proyects = () => {
-
-
+    const ProyectContext = useProyectContext();
+    console.log(ProyectContext)
     return (
         <>
+
             <article className="ticket-row proyects__container">
                 <div className="columns-proyects">
-                    <div className="ticket-row__left-container">
-                        <div className="ticket-row__column-item">
-                            <h5 className="ticket-row__column--primary-text"><span className="richtext title-proyect">asddsaasfasfsafasdsadsa</span></h5>
-                        </div>
-                        <div className="ticket-row__column-item">
-                            <h5 className="ticket-row__column--primary-desciption"><span className="richtext description">asdasdasdasdasdasfdasfsaasdasdasdasdasdasfdasfsaasdasdasdasdasdasfdasfsaasdasdasdasdasdasfdasfsa</span></h5>
-                        </div>
-                        <div className="ticket-row__column-item">
-                            <h5 className="ticket-row__column--primary-desciption"><span className="richtext description">asdasdasdasdasdasdasdasdasdasfdasfsaasdasdasdasdasdasfdasfsaasdasdasdasdasdasfdasfsaasdasdasdasdasdasfdasfsa</span></h5>
-                        </div>
-                        <div className="ticket-row__column-item-down">
-                            <h5 className="ticket-row__column--primary-text"><span className="richtext description">asdasdasdasdasdasdasdasdasdasfdasfsa</span></h5>
-                        </div>
-                    </div>
+                    {ProyectContext?.map(pc => (
+                        <>
+                            <div className="ticket-row__columns">
+                                <div className="ticket-row__left-column" id="proyect">
+                                    <div className="ticket-row__column-item" key={pc.id}>
+                                        <div className="content">
+                                            <h5 className="ticket-row__column--primary-text"><span className="richtext title-proyect">{pc.title}</span></h5>
+                                        </div>
+                                    </div>
+                                    <div className="ticket-row__column-item">
+                                        <div className="content">
+                                            <h5 className="ticket-row__column--primary-text"><span className="richtext descriptionProyect">{pc.descriptionProyect}</span></h5>
+                                        </div>
+                                    </div>
+                                    <div className="ticket-row__column-item">
+                                        <div className="content">
+                                            <h5 className="ticket-row__column--primary-text"><span className="richtext ">{pc.technologies}</span></h5>
+                                        </div>
+                                    </div>
+                                    <div className="ticket-row__column-item-down">
+                                        <h5 className="ticket-row__column--primary-text"><a href={pc.git} className="richtext linkProyect">Ver mas de este proyecto ↗</a></h5>
+                                    </div>
+                                </div>
+                                <div className="ticket-row__right-container">
+                                    <div className="img-proyect-container">
+                                        <img src={pc.img} alt="img-proyect" className="img-proyect" />
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                    ))}
+
                 </div>
-                <div className="ticket-row__right-container">
-                    <div className="ticket-row__column-item">
-                        <h5 className="ticket-row__column--primary-text"><img src="https://www.labrujula24.com/wp-content/uploads/2022/05/pelado.jpg" alt="img-proyect" className="img-proyect" /></h5>
-                    </div>
-                </div>
-                
-            </article>
+
+
+            </article >
             <div className="separator-ui"></div>
         </>
     )

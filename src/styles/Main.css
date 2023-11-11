@@ -1,5 +1,5 @@
 *{
-    transition: ease-in-out 333ms;
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
 }
 .ticket-row__column--primary-text,
 .ticket-row__right-column--secondary-text,
@@ -12,17 +12,20 @@
     flex-direction: row;
     font-size: 16px;
     font-weight: 400;
-    justify-content: flex-end;
+    justify-content: flex-start;
     line-height: 1.25;
     margin: 0;
     padding: 0;
+    width: fit-content;
 }
-.ticket-row--conteiner{
-    display: grid;
-}
+
 .ticket-row {
     display: flex;
     justify-content: space-evenly;
+}
+.ticket-row.noflex {
+    display: contents;
+
 }
 .ticket-right-column {
     width: 20rem;
@@ -35,9 +38,11 @@
 .ticket-row__left-column {
     display: flex;
     width: 30rem;
+    height: 10rem;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
     text-align: start;
+    flex-direction: column;
 }
 .richtext.textname{
     font-size: 40px;
@@ -47,17 +52,18 @@
     transition: ease-in-out 333ms;
 }
 .richtext.description{
-    font-size: 17px;
+    font-size: 18px;
     font-family: "PoppinsMedium";
     transition: ease-in-out 333ms;
 }
 
 .columns-presentation{
     display: flex;
-    gap: 32px;
     grid-template-columns: calc(100% - 392px) auto;
     height: auto;
+    justify-content: space-between;
     flex-direction: row;
+    padding: 2rem;
 }
 .arrow-section{
     display: flex;

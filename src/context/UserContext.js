@@ -1,5 +1,6 @@
 import React, { useContext, createContext, useState, useEffect } from "react";
-import { getInfo } from "../api/apiFunctions";
+import { getInfoPersonal } from "../api/apiFunctions";
+import Proyects from "../components/main/Proyects";
 
 const UserContext = createContext();
 const UserFunctions = createContext();
@@ -12,22 +13,22 @@ export const UserProvider = ({ children }) => {
 
     const initInfo= async() => {
         if (User === null) {
-            await getInfo().then((data) => {
+            await getInfoPersonal().then((data) => {
                 if (data) {
                     setUser({ ...data })
                     setLogged(true)
-                    return User
+            
                 }
                 else {
                     setUser(null)
                     setLogged(false)
-                    return console.log("no llego la info")
+                    console.log("no llego la info")
                 }
             })
         }
         else {
             setUser(null)
-            return User
+        
         }
 
     }
