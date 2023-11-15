@@ -39,14 +39,15 @@ const Proyects = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="separator-container">
+                                <div className="separator-ui"></div>
+                            </div>
                         </>
                     ))}
 
                 </div>
-
-
             </article >
-            <div className="separator-ui"></div>
+
         </>
     )
 }
