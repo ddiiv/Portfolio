@@ -1,6 +1,5 @@
 import React, { useContext, createContext, useState, useEffect } from "react";
 import { getInfoPersonal } from "../api/apiFunctions";
-import Proyects from "../components/main/Proyects";
 
 const UserContext = createContext();
 const UserFunctions = createContext();
