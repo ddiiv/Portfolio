@@ -3,14 +3,13 @@ import "../../styles/Proyects.css"
 import { useProyectContext } from "../../context/ProyectContext";
 
 const Proyects = () => {
-    const ProyectContext = useProyectContext();
-    console.log(ProyectContext)
+    const proyectContext = useProyectContext();
     return (
         <>
 
             <article className="ticket-row proyects__container">
                 <div className="columns-proyects">
-                    {ProyectContext?.map(pc => (
+                    {proyectContext?.map(pc => (
                         <>
                             <div className="ticket-row__columns">
                                 <div className="ticket-row__left-column" id="proyect">

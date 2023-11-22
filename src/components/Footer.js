@@ -13,7 +13,7 @@ const Footer = () => {
                     </div>
                     <div className="container-items__right">
                         <div className="item__right">
-                            <span className="item-span-footer"><a className="nothing" href={usercontext?.linkedin} alt=""> LinkedIn</a></span>
+                            <span className="item-span-footer"><a className="nothing" href={usercontext?.linkein} alt=""> LinkedIn</a></span>
                         </div>
                         <div className="item__right">
                             <span className="item-span-footer"><a className="nothing" href={usercontext?.github} alt="">Github</a></span>
