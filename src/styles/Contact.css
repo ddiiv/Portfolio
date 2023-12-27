@@ -58,21 +58,29 @@ input:focus + .placeholder-text .text{
     padding: 0 0.5rem;
     background-color: transparent;
     transform: translate(0);
+    
     color: black;
     transition: transform 0.15s ease-out, font-size 0.15s ease-out, background-color 0.2s ease-out, color 0.15s ease-out;
 }
 input, .placeholder-text{
     font-size: 1rem;
     padding: 0 1.2rem;
+    
 }
 input.message:focus + .placeholder-text .text{
     border-color: rgb(157, 157, 157);
     color: rgb(157, 157, 157);
     position: absolute;
-    top: 1.5rem;
 }
 input.message{
-    height: 15rem;
+    height: 12rem;
+    max-height: 12rem; 
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    padding: 1.2rem 1.2rem;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    
 }
 .error-message {
     color: red;

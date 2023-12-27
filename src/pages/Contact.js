@@ -19,13 +19,13 @@ const Contact = () => {
         message: Yup.string()
             .required("Un mensaje es requerido")
             .max(300, "La longitud de un mensaje no puede superar los 300 caracteres")
-            .min(50, "Este campo debe tener como minimo 50 caracteres")
+            .min(20, "Este campo debe tener como minimo 50 caracteres")
 
 
     });
 
     return (
-        <>
+        <>  
             <Formik
                 initialValues={{
                     name: '',
@@ -39,7 +39,7 @@ const Contact = () => {
                     alert(JSON.stringify(values, null, 2));
                 }}
             >
-                <Form className="form-contact">
+                <Form className="form-contact" action="https://formsubmit.co/danteinsauviola@gmail.com" method="POST">
                     <div className="inputs__contain">
                         <div class="input-contain">
 
@@ -119,7 +119,7 @@ const Contact = () => {
                     </div>
                     <div className="modal-container-footer">
                         <button className="button is-ghost" type="reset">Cancelar </button>
-                        <button className="button is-primary" type="submit"> Conectar!</button>
+                        <button className="button is-primary" type="submit" value="Enviar"> Conectar!</button>
                     </div>
                 </Form>
             </Formik>
