@@ -12,6 +12,11 @@ const Proyects = () => {
                     {proyectContext?.map(pc => (
                         <>
                             <div className="ticket-row__columns">
+                                <div className="ticket-row__right-container">
+                                    <div className="img-proyect-container">
+                                        <img src={pc.img} alt="img-proyect" className="img-proyect" />
+                                    </div>
+                                </div>
                                 <div className="ticket-row__left-column" id="proyect">
                                     <div className="ticket-row__column-item" key={pc.id}>
                                         <div className="content">
@@ -32,11 +37,7 @@ const Proyects = () => {
                                         <h5 className="ticket-row__column--primary-text"><a href={pc.git} className="richtext linkProyect">Ver mas de este proyecto ↗</a></h5>
                                     </div>
                                 </div>
-                                <div className="ticket-row__right-container">
-                                    <div className="img-proyect-container">
-                                        <img src={pc.img} alt="img-proyect" className="img-proyect" />
-                                    </div>
-                                </div>
+
                             </div>
                             <div className="separator-container">
                                 <div className="separator-ui"></div>

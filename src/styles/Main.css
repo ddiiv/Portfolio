@@ -39,7 +39,7 @@
     display: flex;
     width: 30rem;
     height: 10rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     text-align: start;
     flex-direction: column;
@@ -47,7 +47,7 @@
 .richtext.textname{
     font-size: 40px;
     line-height: 2.5rem;
-    color: rgb(56, 56, 56);
+    color: rgba(0,0,0,.55);
     font-family: "PoppinsExtraBold";
     transition: ease-in-out 333ms;
 }
@@ -69,7 +69,113 @@
     display: flex;
     justify-content: flex-start;
     align-content: center;
-    padding-top: 5rem;
+    padding: 2rem;
     width: 100%;
-    padding-bottom: 5rem ;
+
+}
+.ticket-column-page__reduced{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.ticket-row--download_CV{
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.handlers-switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+
+.cvarchive-css{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    transition: ease-in-out 333ms;
+}
+@media screen and (max-width: 1030px){
+    .columns-presentation{
+        flex-direction: column ;
+    }
+    .ticket-right-column{
+        padding-bottom: 1.5rem;
+    }
+    .ticket-column-page__reduced{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+@media screen and (max-width: 768px){
+
+    .columns-presentation{
+       
+        padding-top: 5rem;
+    }
+    .ticket-row__left-column{
+        width: 100%;
+        height: 100%;
+    }
 }

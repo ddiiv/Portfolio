@@ -6,7 +6,7 @@ import Main from './pages/Main';
 import { UserProvider } from './context/UserContext';
 import { ProyectProvider } from './context/ProyectContext';
 import Footer from './components/Footer';
-import Contact from './pages/Contact';
+
 function App() {
 
 
@@ -17,16 +17,15 @@ function App() {
         <div className="App">
           <BrowserRouter >
             <main className="page">
+              <Navbar />
               <section className='pagecontainer'>
-                <Navbar />
                 <div className='separator-nav'></div>
                 <Routes>
                   <Route>
                     <Route path='/' element={<Main />} />
-                    <Route path='/contact' element={<Contact />} />
                   </Route>
                 </Routes>
-                <Footer />
+              
               </section>
             </main>
           </BrowserRouter>
