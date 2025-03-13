@@ -58,8 +58,7 @@ const Main = () => {
                             <h5 className="ticket-row__right-column--primary-text"><span className="richtext textname"> Hola, Soy Dante Insaurralde.</span></h5>
                         </div>
                         <div className="ticket-row__left-column">
-                            <h5 className="ticket-row__left-column--primary-text"><span className="richtext description">                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                            </span></h5>
+                            <h5 className="ticket-row__left-column--primary-text"><span className="richtext description"> ¡Bienvenidos a mi portfolio! </span></h5>
                         </div>
                     </div>
                     <section className="ticket-column-page__reduced">

@@ -14,8 +14,8 @@
         "description": "Soy un estudiante en Informatica de la escuela ORT almagro. Por otro lado soy Frontend developer y me especializo en Eccomerce y BackOffice, en React y React Native. Proximamente estudiando Ingeneria en Sistemas en la UTN"
     },
     "proyects":[
-        {"idProyect" : 1, "title":"Argentinos Junitos Eccommerce", "descriptionProyect":"Argentinos Junitos Eccommerce para ventas de merchandising, ropa, equipo de furbol AAJJ, etc. Con Login, Carrito de compras, destacados.", "technologies":"FrontEnd: React.js - BackEnd:Node.js", "git":"https://github.com/ddiiv/AAJJ/tree/front-Ecommerce","img":"https://i.ibb.co/nBQj8P5/F-index1.png"},
+        {"idProyect" : 1, "title":"Argentinos Junitos Eccommerce", "descriptionProyect":"Argentinos Junitos Eccommerce para ventas de merchandising, ropa, equipo de furbol AAJJ, etc. Con Login, Carrito de compras, destacados.", "technologies":"FrontEnd: React.js - BackEnd: Node.js", "git":"https://github.com/ddiiv/AAJJ/tree/front-Ecommerce","img":"https://i.ibb.co/nBQj8P5/F-index1.png"},
         {"idProyect" : 3, "title":"Made by nova", "descriptionProyect":"MadeByNova fue unos de mis primeras tiendas virtuales para venta de ropa, donde hice una web tipo eccommerce para venta de productos, mas referidos a la ropa", "technologies":"Frontend: MVC C#","git":"https://github.com/ddiiv/MadeByNova", "img":""},
-        {"idProyect" : 4, "title":"Recipe Lovers", "descriptionProyect":"Recipe Lovers es una app para celular, en donde podras logearte y ver recetas de todo tipo. Ademas puedes agregar tuus propias recetas, todavia esta en desarrollo","git":"https://github.com/ddiiv/RecipeLovers","img":""}
+        {"idProyect" : 4, "title":"Recipe Lovers", "descriptionProyect":"Recipe Lovers es una app para celular, en donde podras logearte y ver recetas de todo tipo. Ademas puedes agregar tuus propias recetas, todavia esta en desarrollo","git":"https://github.com/ddiiv/RecipeLovers","img":"https://i.ibb.co/Wp3wVt28/Recipe-Lovers2.png"}
     ]
 }
