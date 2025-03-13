@@ -1,4 +1,4 @@
-import photo from "../../assets/example.avif";
+
 import "../../styles/AboutMe.css";
 
 const AboutMe = () => {
@@ -13,12 +13,11 @@ const AboutMe = () => {
             <div className="ticket-aboutme__container">
 
                 <div className="ticket-aboutme__left-column">
-                    <h5 className="ticket-aboutme__left-column--primary-text"><p className="richtext-aboutme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p></h5>
+                    <h5 className="ticket-aboutme__left-column--primary-text"><p className="richtext-aboutme">Soy Dante y tengo 18 años, estudio Ingeniería en Sistemas en la UTN, por otro lado estoy tambien cursando en Técnico de reparación de celulares. En cuanto a mi en lo personal soy alguien disciplinado y muy activo en mi dia a dia, también compito en un equipo de basquet y trabajo de vendedor en una galería. Estoy buscando oportunidades laborales en donde los puestos que encuentre, me ayuden a explotar mis habilidades, aprender y obtener resultados. </p></h5>
                 </div>
                 <div className="ticket-aboutme__right-column">
                     <div className="img-aboutme-container">
-                        <img src={photo} alt="img-aboutme" className="img-aboutme" />
+                       <button></button>
                     </div>
                 </div>
             </div>
