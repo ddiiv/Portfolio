@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Proyects from "../components/main/Proyects";
 import AboutMe from "../components/main/AboutMe";
+import Education from "../components/main/Education";
+import ContactMe from "../components/main/ContactMe.js";
 import { useUserContext } from "../context/UserContext.js";
 import "../styles/Main.css";
 import svgarrowdown from "../assets/arrowdown.svg";
@@ -52,10 +54,6 @@ const Main = () => {
                   {" "}
                   Hola, Soy Dante Insaurralde.
                 </span>
-                <span className="richtext textname mini-text">
-                        {" "}
-                        Estudiante, programador, emprendedor y deportista.
-                    </span>
               </h5>
 
             </div>
@@ -71,6 +69,9 @@ const Main = () => {
                 <img className="arrow-img" alt="arrow-img" src={svgarrowdown} />
               </div>
               <AboutMe />
+            </div>
+            <div className="ticket-row--education">
+              <Education />
             </div>
             <div className="ticket-row--proyects">
               <Proyects />

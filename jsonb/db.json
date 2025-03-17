@@ -7,7 +7,7 @@
     "personalinfo":{
         "name": "Dante",
         "surname": "Insaurralde Viola",
-        "age": 17,
+        "age": 18,
         "email": "danteinsauviola@gmail.com",
         "linkein":"https://www.linkedin.com/in/dante-insaurralde-viola-944393261/",
         "github":"https://github.com/ddiiv",
@@ -18,4 +18,5 @@
         {"idProyect" : 3, "title":"Made by nova", "descriptionProyect":"MadeByNova fue unos de mis primeras tiendas virtuales para venta de ropa, donde hice una web tipo eccommerce para venta de productos, mas referidos a la ropa", "technologies":"Frontend: MVC C#","git":"https://github.com/ddiiv/MadeByNova", "img":""},
         {"idProyect" : 4, "title":"Recipe Lovers", "descriptionProyect":"Recipe Lovers es una app para celular, en donde podras logearte y ver recetas de todo tipo. Ademas puedes agregar tuus propias recetas, todavia esta en desarrollo","git":"https://github.com/ddiiv/RecipeLovers","img":"https://i.ibb.co/Wp3wVt28/Recipe-Lovers2.png"}
     ]
+    
 }

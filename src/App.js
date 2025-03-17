@@ -6,7 +6,7 @@ import Main from './pages/Main';
 import { UserProvider } from './context/UserContext';
 import { ProyectProvider } from './context/ProyectContext';
 import Footer from './components/Footer';
-
+import ContactMe from './components/main/ContactMe';
 function App() {
 
 
@@ -28,6 +28,9 @@ function App() {
               
               </section>
             </main>
+                  <div className="ticket-row--proyects">
+                    <ContactMe />
+                  </div>
           </BrowserRouter>
         </div>
       </ProyectProvider>

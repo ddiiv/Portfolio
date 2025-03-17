@@ -1,7 +1,26 @@
 
 import "../../styles/AboutMe.css";
-
+import React from "react";
 const AboutMe = () => {
+
+    const onButtonClick = () => {
+    
+        // using Java Script method to get PDF file
+        fetch("cv.pdf").then((response) => {
+            response.blob().then((blob) => {
+            
+                // Creating new object of PDF file
+                const fileURL =
+                    window.URL.createObjectURL(blob);
+                    
+                // Setting various property values
+                let alink = document.createElement("a");
+                alink.href = fileURL;
+                alink.download = "cv.pdf";
+                alink.click();
+            });
+        });
+    };
     return (
         <div className="ticket-aboutme">
             <header className="ticket-aboutme__header">
@@ -16,8 +35,9 @@ const AboutMe = () => {
                     <h5 className="ticket-aboutme__left-column--primary-text"><p className="richtext-aboutme">Soy Dante y tengo 18 años, estudio Ingeniería en Sistemas en la UTN, por otro lado estoy tambien cursando en Técnico de reparación de celulares. En cuanto a mi en lo personal soy alguien disciplinado y muy activo en mi dia a dia, también compito en un equipo de basquet y trabajo de vendedor en una galería. Estoy buscando oportunidades laborales en donde los puestos que encuentre, me ayuden a explotar mis habilidades, aprender y obtener resultados. </p></h5>
                 </div>
                 <div className="ticket-aboutme__right-column">
-                    <div className="img-aboutme-container">
-                       <button></button>
+                    <div className="buttons-aboutme-container">
+                       <button className="button-aboutme" onClick={onButtonClick}><p className="textbutton">Descargar CV</p></button>
+                       <button className="button-aboutme"><p className="textbutton">Contactame</p></button>
                     </div>
                 </div>
             </div>
