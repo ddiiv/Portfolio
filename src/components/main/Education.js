@@ -65,7 +65,7 @@ const Education = () => {
                         <div className="card-body">
                             <p className="card-subtext-date">2021</p>
 
-                            <p className="card-text">Curso de desarrollo web .net en donde recibí una nota de 8 en el final y cumplidos con los objetivos del proyecto final. </p>
+                            <p className="card-text">Curso de desarrollo web .net en donde recibí una nota de 8 en el final. El framework que usamos para desarrollar aplicaciones fue ASP.NET en C#.  </p>
                         </div>
                     </div>
 
@@ -84,7 +84,7 @@ const Education = () => {
                         <div className="card-body">
                             <p className="card-subtext-date">2025</p>
 
-                            <p className="card-text">Actualmente cursando</p>
+                            <p className="card-text">Aquí curse la tecnicatura en arreglo de celulares, donde aprendi a diagnosticar, resolver y presupestar arreglos. A nivel software como hardware y un poco de microsoldadura.</p>
                         </div>
                     </div>
                 </article>

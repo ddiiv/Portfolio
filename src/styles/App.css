@@ -1,37 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-.App{
+
+.App {
     background-color: #F2EFE5;
     font-family: 'Poppins', sans-serif;
     color: #A79277;
 }
-main.page{
 
-    overflow:hidden ;
+main.page {
+    overflow: hidden;
 
 }
-.pagecontainer{    
+
+.pagecontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 5rem;
 }
-@media screen and (max-width: 768px){
-    .pagecontainer{
+
+@media screen and (max-width: 768px) {
+    .pagecontainer {
         padding: 2rem;
-    }
-}
-@media screen and (max-width: 425px){
-    .pagecontainer{
         width: 100%;
-        display: block;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .pagecontainer {
+        width: 100%;
         padding: 0rem;
     }
-    
+
 }

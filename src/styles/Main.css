@@ -168,6 +168,15 @@
     border-radius: 5px;
     transition: ease-in-out 333ms;
 }
+.img-aboutme{
+    width: 100%;
+    
+    image-resolution: from-image;
+    object-fit: contain;
+    border-radius: 10%;
+    border: 5px solid #00000060;
+    transition: ease-in-out 333ms;
+}
 @media screen and (max-width: 1030px){
     .ticket-right-column{
         padding-bottom: 1.5rem;
@@ -176,9 +185,16 @@
         padding-left: 0rem;
         padding-right: 0rem;
     }
-}
-@media screen and (max-width: 768px){
-    .columns-presentation{
+    .contactme-card{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .ad{
+        width: 20rem;
+        overflow:auto;
+        
+    }
+        .columns-presentation{
       
         padding-top: 5rem;
     }
@@ -190,5 +206,65 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+     h5.card-title {
+        font-size: 0.9rem;
+
+    }
+    article.grid-cardcontainer
+    {
+        width: 100%;
+        padding: 0rem;
+    }
+    .ticket-row__columns{
+        align-items: center;
+        justify-content: center;
+    }
+    div.ticket-row__left-column#proyect {
+        padding: 0rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .columns-presentation{
+        padding: 2rem;
+    }
+    
+    .pagecontainer{
+        padding: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 425px){
+    .columns-presentation{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .pagecontainer{
+        align-items: normal;
+    }
+    .ticket-row.education__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .richtext.linkProyect{
+        font-size: 14px;
+    }
+    .contactme-test{
+        flex-direction: column;
+    }
+    .imgprofile{
+        width: 15rem;
+    }
+    .ticket-right-column{
+        width: 100%;
+        
+        justify-content: left;
     }
 }

@@ -64,7 +64,7 @@
     height: 100%;
 
 }
-.button-aboutme{
+button.button-aboutme{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    font-family: "PoppinsExtraBold";
+    font-family: "Poppins";
     transition: ease-in-out 333ms;
     cursor: pointer;
 }
@@ -95,6 +95,10 @@
 .textbutton{
     font-size: 14px;
     font-family: "PoppinsExtraBold";
+}
+textarea.input-contactme{
+    resize: none;
+    font-family: "Poppins";
 }
 @media screen and (max-width: 1024px){
     .ticket-aboutme__container{

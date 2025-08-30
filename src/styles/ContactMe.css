@@ -61,15 +61,16 @@
     border: 1px solid #A79277;
 }
 .input-contactme.textarea{
-    height: 8rem;
+    height: 8.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     
 }
 .ad{
-    width: 526px;
+    width: 20rem;
     margin-right: -4px;
+    font-family: "Poppins";
 }
 .contactme-card__submit{
     display: flex;
@@ -97,6 +98,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: ease-in-out 333ms;
+    font-family: "Poppins";
 }
 .button-contactme:hover{
     background-color: #6C4E31;

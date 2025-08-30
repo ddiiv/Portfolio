@@ -90,9 +90,10 @@ const ContactMe = () => {
                                 <div className="right-contactme">
                                     <div className="contactme-card__item">
                                         <Field
+                                            as="textarea"
                                             className="input-contactme textarea ad"
                                             name="message"
-                                            type="textbox"
+                                            type="textarea"
                                             placeholder="Mensaje"
                                         >
 

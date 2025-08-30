@@ -8,7 +8,7 @@ import "../styles/Main.css";
 import svgarrowdown from "../assets/arrowdown.svg";
 import cv from "../assets/cv.pdf";
 import cvingles from "../assets/cv-ingles.pdf";
-import photo from "../assets/example.avif";
+import photo from "../assets/example.png";
 
 const Main = () => {
   const context = useUserContext();
@@ -59,7 +59,13 @@ const Main = () => {
             </div>
             <div className="ticket-right-column">
               <div className="img-aboutme-container">
-                <img src={photo} alt="img-aboutme" className="img-aboutme" />
+                <div class="card-container">
+                  <div class="upper-container">
+                    <div class="image-container">
+                      <img src={photo} alt="profile image" className="imgprofile" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

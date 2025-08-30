@@ -27,10 +27,10 @@ function App() {
                 </Routes>
               
               </section>
-            </main>
                   <div className="ticket-row--proyects">
                     <ContactMe />
                   </div>
+            </main>
           </BrowserRouter>
         </div>
       </ProyectProvider>
